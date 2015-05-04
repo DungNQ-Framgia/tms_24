@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'profile', to: 'users#show'
 
+  ActiveAdmin.routes(self)
   resources :courses, only: [:index, :show] do
     resources :subjects
   end

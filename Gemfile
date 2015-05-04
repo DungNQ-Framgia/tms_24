@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails',                   '4.2.0'
 gem 'bcrypt',                  '3.1.7'
-gem 'faker',                   '1.4.2'
 gem 'carrierwave',             '0.10.0'
 gem 'mini_magick',             '3.8.0'
 gem 'fog',                     '1.29.0'
@@ -17,6 +16,9 @@ gem 'turbolinks',              '2.3.0'
 gem 'jbuilder',                '2.2.3'
 gem 'sdoc',                    '0.4.0', group: :doc
 gem 'devise'
+gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'cancan'
+gem 'seed_dump'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'

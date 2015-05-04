@@ -13,6 +13,9 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  def admin?
+    self.role == 1
+  end
   private
   def set_default
     self.email = email.downcase

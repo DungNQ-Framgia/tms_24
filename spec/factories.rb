@@ -18,12 +18,6 @@ FactoryGirl.define do
     sequence(:description) {|i| "description#{i}"}
   end
 
-  factory :user do
-    sequence(:name) {|i| "name#{i}"}
-    sequence(:email) {|i| "email#{i}@gmail.com"}
-    sequence(:password) {|i| "password#{i}"}
-  end
-
   factory :course_subject do
     course
     subject
